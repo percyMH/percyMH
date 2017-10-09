@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Sitio web Responsive</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<meta-name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maxium-scale=1.0,minimum-scale=1.0">
+	<script type="text/javascript">
+		function expandirTexto(inicio, fin, paso, velo){ 
+			if (inicio < fin){  
+		 		document.getElementById("title").style.letterSpacing = inicio+"px"; inicio=inicio+paso; setTimeout("expandirTexto("+inicio+","+fin+","+paso+","+velo+")",velo);
+		 	}
+		}
+	</script> 
+</head>
+	<body onLoad="expandirTexto(-200,3,1,5);">
+		<div class="contenedor">
+			<header>
+				<h1 id="title">Algo del modelo Canvas</h1>
+			</header>
+			<section class="main">
+				<img src="canvasModel.PNG" alt=""><br><br>
+				<p>
+					El modelo canvas o lienzo de modelo de negocio es un modelo que sirve para plasmar y proyectar un modelo de negocio de manera sencilla. Pues este modelo consta de varios modulos para que el innovador pueda trazar sus metas y anhelos, estos módulos tienen que estar bien definidos de acuerdo a lo que se va a desarrollar el modelo de negocio.
+				</p>
+			</section>
+			<aside>
+				<p>
+					La innovación permite a que los bienes y servicios producidos o ideados puedan llegar a todo el mundo para la satisfacción de las necesidades del usuario. 
+				</p>
+			</aside>
+			<footer>
+				<p>
+					Recuerda, sin la innovación de nada sirve producir en cantidad y calidad, y en consecuencia no habría desarrollo. Por lo cual la innovación del producto es fundamental.
+					
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
